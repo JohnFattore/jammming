@@ -23,10 +23,13 @@ function SearchBar(props) {
 
         try {
             let host = "https://api.spotify.com";
-            let endpoint = "/v1/search";
-            let query = "?q=" + search + '&type=track';
+            let endpoint = "/v1/search?";
+            //let query = "?q=" + search + '&type=track';
 
-            let response = await fetch(host+endpoint+query, {
+            let response = await fetch(host+endpoint + new URLSearchParams({
+                q: search,
+                type: "track",
+            }), {
                 headers: {
                     'Authorization': 'Bearer ' + props.aToken
                 }
@@ -38,6 +41,7 @@ function SearchBar(props) {
                 setTracks(jsonResponse.tracks.items);
             }
             else {
+                console.log(response.statusText)
                 throw new Error('Fail');
             }
 

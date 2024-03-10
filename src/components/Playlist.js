@@ -33,6 +33,7 @@ function PlayList(props) {
 
                 setUserID(jsonResponse.id);
             } else {
+                console.log(response)
                 throw new Error('Fail userID get');
             }
         } catch(e) {

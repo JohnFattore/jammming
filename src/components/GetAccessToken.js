@@ -1,7 +1,7 @@
 
 function getAccessToken() {
 
-        const clientID = 'e3745532c0c3495ba38d52214cafd102';
+        const clientID = 'b6bd1bc8d3484d1e9254244c435cc6be';
 
         const redirect_uri = 'http://localhost:3000/';
 
