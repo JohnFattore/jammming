@@ -1,4 +1,4 @@
-
+/*
 function getAccessToken() {
 
         const clientID = 'b6bd1bc8d3484d1e9254244c435cc6be';
@@ -16,4 +16,4 @@ function getAccessToken() {
 }
 
 export default getAccessToken;
-
+*/

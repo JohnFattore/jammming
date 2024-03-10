@@ -5,7 +5,9 @@ import SearchResults from './SearchResults';
 function SearchBar(props) {
     const [search,setSearch] = useState('');
 
-
+// to see if key changes, here is URL at 1 pm 
+// http://localhost:3000/#access_token=BQAGvFcwmyUMTvUrVeo4mYt3lEzauKgnNr8nPQpo5tbmz4wC_4iobaCkTy51Ix2uWK__Sta71Sd3xEXGNEQeGVQ6YsZiGSULOYp3VYYvnF5BfRMnL6in8Q1PSqA8RrQNRVk0jDmygYXiPHJbtqmdcFU6kqVvR52tQ_zQ8KH2NFhP9RNtuWu1n78m7PT8gHGQb4fDUS_RIZJBq9CKwldqjtSMoJzHrjbR3mBwoTtiL7DCj5Bo-wpFrRKc&token_type=Bearer&expires_in=3600
+ 
     //Get Access token to make calls
     useEffect(() => {
         if (props.aToken === '') {
